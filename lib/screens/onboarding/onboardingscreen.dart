@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:quick_cart/screens/onboarding/signup_screen.dart';
+import 'login_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -64,7 +65,12 @@ class OnboardingScreen extends StatelessWidget {
 
                 child: ElevatedButton(
                   onPressed: () {
-                    print('Login button clicked');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginScreen(),
+                      ),
+                    );
                   },
 
                   style: ElevatedButton.styleFrom(
@@ -95,7 +101,12 @@ class OnboardingScreen extends StatelessWidget {
 
                 child: OutlinedButton(
                   onPressed: () {
-                    print('Signup button clicked');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignupScreen(),
+                      ),
+                    );
                   },
 
                   style: OutlinedButton.styleFrom(
