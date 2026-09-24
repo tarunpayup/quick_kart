@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_cart/api_test.dart';
 import 'package:quick_cart/screens/onboarding/splashscreen.dart';
 
 
@@ -12,7 +13,7 @@ class QuickKartApp extends StatelessWidget{
   Widget build(BuildContext context){
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Splashscreen()
+      home:ApiTest()
     );
   }
 }
