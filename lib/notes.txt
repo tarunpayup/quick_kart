@@ -1,0 +1,11 @@
+MVVM
+API -> 
+
+Screen -> Button -> ViewModel -> Repository -> API Service
+
+Once get the data to the API Service
+Api Service -> Model -> Repository -> ViewModel -> Screen
+
+MVVM - Model, ViewModel, Screen/View
+Repository
+APIService
